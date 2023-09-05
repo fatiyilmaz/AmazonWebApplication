@@ -1,0 +1,2 @@
+Cucumber POM dizayni kuruldu
+pom.xml de <dependencies> </dependencies> arasina webdrivermanager, selenium-java, cucumber-java, cucumber-junit konuldu
