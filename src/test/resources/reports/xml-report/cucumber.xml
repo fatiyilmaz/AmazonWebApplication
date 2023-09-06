@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="24.115" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Anasayfa" name="Kullanici sayfaya giris yapar" time="23.911">
+<testsuite name="Cucumber" time="0.122" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="search by categories in searcbox" name="Search by categories in searcbox" time="0.018">
+<failure/>
 <system-out><![CDATA[
-Given user "https://www.amazon.com.tr" logs in..............................passed
-And confirms that it is on the amazon page and on the homepage..............passed
-And scroll to the bottom of the page and see the countries..................passed
-And Hakkımızda, Bizimle Para Kazanın, Amazon Ödeme Araçları, Size Yardımcı Olalım sections appear.passed
-And backToTop click.........................................................passed
-And clicks and verifies All.................................................passed
-And all click...............................................................passed
+Given go to home page url...................................................undefined
+And From the All categories tab, click in order.............................skipped
+And verify that it goes to the right category...............................skipped
 ]]></system-out>
 </testcase>
 </testsuite>

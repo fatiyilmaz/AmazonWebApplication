@@ -1,7 +1,7 @@
 @homepage
-Feature: Anasayfa
+Feature: Homepage
 
-  Scenario: Kullanici sayfaya giris yapar
+  Scenario: Homepage Functions
     Given user "https://www.amazon.com.tr" logs in
     And confirms that it is on the amazon page and on the homepage
     And scroll to the bottom of the page and see the countries
