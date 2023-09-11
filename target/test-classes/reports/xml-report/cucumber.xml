@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testsuite name="Cucumber" time="107.11" tests="7" skipped="0" failures="2" errors="0">
 <testcase classname="Homepage" name="Login to Amazon and verify" time="7.403">
 <system-out><![CDATA[
@@ -123,6 +124,15 @@ Session ID: 11b4b04885da2fbfa4cad3926ca5c9c4
 Given user "https://www.amazon.com.tr" logs in..............................passed
 And all click...............................................................passed
 And Clicks and verifies the tabs of the highlights section..................failed
+=======
+<testsuite name="Cucumber" time="0.122" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="search by categories in searcbox" name="Search by categories in searcbox" time="0.018">
+<failure/>
+<system-out><![CDATA[
+Given go to home page url...................................................undefined
+And From the All categories tab, click in order.............................skipped
+And verify that it goes to the right category...............................skipped
+>>>>>>> master
 ]]></system-out>
 </testcase>
 </testsuite>

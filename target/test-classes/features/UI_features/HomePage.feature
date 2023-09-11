@@ -1,7 +1,11 @@
 @homepage
 Feature: Homepage
 
+<<<<<<< HEAD
     Scenario: Login to Amazon and verify
+=======
+  Scenario: Homepage Functions
+>>>>>>> master
     Given user "https://www.amazon.com.tr" logs in
     And confirms that it is on the amazon page and on the homepage
 

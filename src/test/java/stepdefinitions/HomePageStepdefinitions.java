@@ -204,6 +204,7 @@ public class HomePageStepdefinitions {
 
             }
             allClick();
+            i++;
 
 
         }

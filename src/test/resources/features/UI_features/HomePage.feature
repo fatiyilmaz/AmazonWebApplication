@@ -27,7 +27,6 @@ Feature: Homepage
     And all click
     And Hello, sign in clicks and hello sign in that it is redirected to the login page
 
-
     Scenario: Tümü - Öne Çıkanlar
     Given user "https://www.amazon.com.tr" logs in
     And all click

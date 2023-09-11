@@ -1,0 +1,14 @@
+<<<<<<< HEAD
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.122" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="search by categories in searcbox" name="Search by categories in searcbox" time="0.018">
+<failure/>
+<system-out><![CDATA[
+Given go to home page url...................................................undefined
+And From the All categories tab, click in order.............................skipped
+And verify that it goes to the right category...............................skipped
+]]></system-out>
+</testcase>
+</testsuite>
+>>>>>>> master
