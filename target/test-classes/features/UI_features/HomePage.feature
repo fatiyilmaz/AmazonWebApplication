@@ -1,11 +1,7 @@
 @homepage
 Feature: Homepage
 
-<<<<<<< HEAD
     Scenario: Login to Amazon and verify
-=======
-  Scenario: Homepage Functions
->>>>>>> master
     Given user "https://www.amazon.com.tr" logs in
     And confirms that it is on the amazon page and on the homepage
 
@@ -30,7 +26,6 @@ Feature: Homepage
     Given user "https://www.amazon.com.tr" logs in
     And all click
     And Hello, sign in clicks and hello sign in that it is redirected to the login page
-
 
     Scenario: Tümü - Öne Çıkanlar
     Given user "https://www.amazon.com.tr" logs in

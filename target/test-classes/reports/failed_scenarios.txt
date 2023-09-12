@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-file:src/test/resources/features/UI_features/HomePage.feature:8:31
-=======
 file:src/test/resources/features/UI_features/HomePageSearchBox.feature:4
->>>>>>> master
