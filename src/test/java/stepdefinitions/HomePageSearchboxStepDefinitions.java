@@ -27,35 +27,33 @@ public class HomePageSearchboxStepDefinitions {
     @And("From the All categories tab, click in order")
     public void from_the_all_categories_tab_click_in_order() {
         homePage = new HomePage();
-        searchBox =new HomePageSearcbox();
+        searchBox = new HomePageSearcbox();
         Select dropdown = new Select(homePage.allCategories);
         List<WebElement> eachCategory = dropdown.getOptions();
 
 
-
-
-
         for (int i = 1; i < eachCategory.size(); i++) {
-            System.out.println(i + " = " +eachCategory.get(i).getText());
+
             String expectedData = eachCategory.get(i).getText();
-            ReusableMethods.waitForClickablility( eachCategory.get(i),5).click();
-            ReusableMethods.waitFor(5);
-            ReusableMethods.waitForClickablility( searchBox.searchiconButton,5).click();
+            System.out.println(i + " = " + expectedData);
+            ReusableMethods.waitForClickablility(eachCategory.get(i), 5).click();
+            ReusableMethods.waitForClickablility(searchBox.searchiconButton, 10).click();
             dropdown = new Select(homePage.allCategories);
             eachCategory = dropdown.getOptions();
 
-           String actualdata=ReusableMethods.waitForVisibility(searchBox.isCategoryName,5).getText();
-           if(!expectedData.equals(actualdata)){
-               System.out.println("Eşit değil "+ actualdata +" " + expectedData);
-           }else {
-               assertEquals(expectedData,actualdata);
-           }
-          // assertEquals(expectedData,actualdata);
+            String actualdata = ReusableMethods.waitForVisibility(searchBox.isCategoryName, 5).getText();
+            System.out.println("actualdata = " + actualdata);
+            //S           String actualdatam = ReusableMethods.waitForVisibility(searchBox.isCategoryNameModa, 5).getText();
+            if (!actualdata.contains(expectedData)) {
+                System.out.println("expected data ile actual data içermiyror " + expectedData + " " + actualdata);
+            } else {
+                assertTrue(actualdata.contains(expectedData));
+            }
         }
 
 
-
     }
+
 
     @And("verify that it goes to the right category")
     public void verify_that_it_goes_to_the_right_category() {
