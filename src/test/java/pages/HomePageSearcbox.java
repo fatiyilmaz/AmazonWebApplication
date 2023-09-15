@@ -24,4 +24,6 @@ public class HomePageSearcbox {
     public WebElement isCategoryNameModa;
     @FindBy(xpath = "//input[@id='nav-search-submit-button']")
     public WebElement searchiconButton;
+
+
 }
