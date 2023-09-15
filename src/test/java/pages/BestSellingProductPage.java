@@ -1,5 +1,6 @@
 package pages;
 
+import io.cucumber.java.zh_cn.假如;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
@@ -17,4 +18,6 @@ public class BestSellingProductPage {
             @FindBy(xpath = "//span[@aria-label='Daha fazla gör  Çok satanlar']")
     })
     public WebElement getBestSellingProduct;
+    @FindBy(xpath = "//div[@class='a-cardui _cDEzb_grid-cell_1uMOS expandableGrid p13n-grid-content']")
+    public WebElement tenBestSellingProduct;
 }

@@ -1,14 +1,18 @@
-<<<<<<< HEAD
-=======
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="0.122" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="search by categories in searcbox" name="Search by categories in searcbox" time="0.018">
-<failure/>
+<testsuite name="Cucumber" time="770.245" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Top Ten Best Selling Products" name="Click on the products in the Categories section" time="621.946">
 <system-out><![CDATA[
-Given go to home page url...................................................undefined
-And From the All categories tab, click in order.............................skipped
-And verify that it goes to the right category...............................skipped
+Given user "https://www.amazon.com.tr" logs in..............................passed
+Then click on the products in the Categories section........................passed
+And lists the top twenty best-selling products..............................passed
+And listed products are printed to excel file...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="search by categories in searcbox" name="Search by categories in searcbox" time="148.196">
+<system-out><![CDATA[
+Given user "https://www.amazon.com.tr" logs in..............................passed
+And From the All categories tab, click in order.............................passed
+And verify that it goes to the right category...............................passed
 ]]></system-out>
 </testcase>
 </testsuite>
->>>>>>> master
