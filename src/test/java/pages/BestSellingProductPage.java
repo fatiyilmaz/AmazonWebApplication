@@ -7,6 +7,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 public class BestSellingProductPage {
     public BestSellingProductPage() {
         PageFactory.initElements(Driver.getDriver(), this);
@@ -18,6 +20,6 @@ public class BestSellingProductPage {
             @FindBy(xpath = "//span[@aria-label='Daha fazla gör  Çok satanlar']")
     })
     public WebElement getBestSellingProduct;
-    @FindBy(xpath = "//div[@class='a-cardui _cDEzb_grid-cell_1uMOS expandableGrid p13n-grid-content']")
-    public WebElement tenBestSellingProduct;
+    @FindBy(xpath = "//div[@class='p13n-sc-uncoverable-faceout']")
+    public List<WebElement> tenBestSellingProduct;
 }
